@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="Workflow" layout="column">
+<head>
+    <meta name="viewport" http-equiv="X-UA-Compatible" content="IE-9, width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no" />
+    <link href="all.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+    <link href="Scripts/monaco-editor/dev/vs/editor/editor.main.css" rel="stylesheet" />
+
+    <!--<script src="Scripts/jquery-1.9.1.js"></script>-->
+    <link href="Content/bootstrap.cosmo.css" rel="stylesheet" />
+    <script src="Scripts/bootstrap.js"></script>
+
+    <script src="Scripts/monaco-editor/dev/vs/loader.js"></script>
+
+    <script src="MonacoRunnerNoJQuery.js"></script>
+   
+  </head>
+
+
+<body>
+    <section class="try">
+        <div class="container">
+            <h3>Editor</h3>
+            <div class="editor row">               
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label class="control-label">Language</label>
+                            <select id ="languagePicker" class="language-picker" onchange="changeLanguage()"></select>
+                        </div>
+                        <div class="col-sm-3">
+                            <label class="control-label">Theme</label>
+                            <select class="theme-picker"  id="themePicker" onchange="changeThemeUI()">
+                                <option>Visual Studio</option>
+                                <option>Visual Studio Dark</option>
+                                <option>High Contrast Dark</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="editor-frame">
+                        <div class="loading editor" style="display: none;">
+                            <div class="progress progress-striped active">
+                                <div class="bar"></div>
+                            </div>
+                        </div>
+                        <div id="editor"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
+

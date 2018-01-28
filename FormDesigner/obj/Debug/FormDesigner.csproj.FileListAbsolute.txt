@@ -1,0 +1,5 @@
+C:\Repos\BMS\BlockchainWorkflowEngine\FormDesigner\FormDesigner\bin\FormDesigner.dll
+C:\Repos\BMS\BlockchainWorkflowEngine\FormDesigner\FormDesigner\bin\FormDesigner.pdb
+C:\Repos\BMS\BlockchainWorkflowEngine\FormDesigner\FormDesigner\obj\Debug\FormDesigner.csprojResolveAssemblyReference.cache
+C:\Repos\BMS\BlockchainWorkflowEngine\FormDesigner\FormDesigner\obj\Debug\FormDesigner.dll
+C:\Repos\BMS\BlockchainWorkflowEngine\FormDesigner\FormDesigner\obj\Debug\FormDesigner.pdb

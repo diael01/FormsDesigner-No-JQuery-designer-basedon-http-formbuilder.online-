@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" http-equiv="X-UA-Compatible" content="IE-9, width=device-width,initial-scale=1,maximum-scale=1, user-scalable=no" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link href="css/formDesigner.css" rel="stylesheet" />
+    <link href="css/formRender.css" rel="stylesheet" />
+    <link href="css/modal.css" rel="stylesheet" />
+
+
+    <script src="js/loaders/autocomplete.js"></script>
+    <script src="js/loaders/button.js"></script>
+    <script src="js/loaders/checkbox.js"></script>
+    <script src="js/loaders/checkboxGroup.js"></script>
+    <script src="js/loaders/dateField.js"></script>
+    <script src="js/loaders/fileUpload.js"></script>
+    <script src="js/loaders/header.js"></script>
+    <script src="js/loaders/hiddenInput.js"></script>
+    <script src="js/loaders/number.js"></script>
+    <script src="js/loaders/paragraph.js"></script>
+    <script src="js/loaders/radioGroup.js"></script>
+    <script src="js/loaders/select.js"></script>
+    <script src="js/loaders/textArea.js"></script>
+    <script src="js/loaders/textField.js"></script>
+
+    <script src="js/common.js"></script>
+
+   
+
+</head>
+
+<body>
+    <div class="content">
+        <h1>javaScript formBuilder</h1>
+        <div id="bw" class="build-wrap">
+            <div id="frmb-0-form-wrap" class="form-wrap form-builder">
+                <div id="frmb-0-stage-wrap" class="stage-wrap pull-left empty">
+                    <ul id="frmb-0" class="frmb ui-sortable" style="min-height: 519px;"></ul>
+                </div>
+                <div id="frmb-0-cb-wrap" class="cb-wrap pull-right">
+                    <ul id="frmb-0-control-box" class="frmb-control ui-sortable">
+                        <li class="icon-autocomplete ui-sortable-handle" label="Autocomplete" onclick="loadAutocompleteHtml()"><span>Autocomplete</span></li>
+                        <li class="icon-button-input ui-sortable-handle" label="Button" onclick="loadButtonHtml()"><span>Button</span></li>
+                        <li class="icon-checkbox ui-sortable-handle" label="Checkbox" onclick="loadCheckboxHtml()"><span>Checkbox</span></li>
+                        <li class="icon-checkbox-group ui-sortable-handle" label="Checkbox Group" onclick="loadCheckboxGroupHtml()"><span>Checkbox Group</span></li>
+                        <li class="icon-calendar ui-sortable-handle" label="Date Field" onclick="loadDateFieldHtml()"><span>Date Field</span></li>
+                        <li class="icon-file-input ui-sortable-handle" label="File Upload" onclick="loadFileUploadHtml()"><span>File Upload</span></li>
+                        <li class="icon-header ui-sortable-handle" label="Header" onclick="loadHeaderHtml()"><span>Header</span></li>
+                        <li class="icon-hidden-input ui-sortable-handle" label="Hidden Input" onclick="loadHiddenInputHtml()"><span>Hidden Input</span></li>
+                        <li class="icon-paragraph ui-sortable-handle" label="Paragraph" onclick="loadParagraphHtml()"><span>Paragraph</span></li>
+                        <li class="icon-number ui-sortable-handle" label="Number" onclick="loadNumberHtml()"><span>Number</span></li>
+                        <li class="icon-radio-group ui-sortable-handle" label="Radio Group" onclick="loadRadioGroupHtml()"><span>Radio Group</span></li>
+                        <li class="icon-select ui-sortable-handle" label="Select" onclick="loadSelectHtml()"><span>Select</span></li>
+                        <li class="icon-text-input ui-sortable-handle" label="Text Field" onclick="loadTextFieldHtml()"><span>Text Field</span></li>
+                        <li class="icon-text-area ui-sortable-handle" label="Text Area" onclick="loadTextAreaHtml()"><span>Text Area</span></li>
+                    </ul><div class="form-actions btn-group">
+                        <button id="frmb-0-clear-all" type="button" class="clear-all btn btn-default" onclick="areYouSure()">Clear</button>
+                        <button id="frmb-0-view-data" type="button" class="view-data btn btn-default" onclick="viewData()">{  }</button>
+                        <button class="btn btn-primary form-builder-save" id="frmb-0-save" type="button" onclick="saveStaging()">Save</button>
+                        <div id="modalDialog" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p class="json"></p>
+                                <div class="form-actions btn-group">
+                                    <button id="no" type="button" class="btn btn-default" style="display:none;" onclick="closeModal()">No</button>
+                                    <button id="yes" type="button" class="clear-all btn btn-default" style="display:none;" onclick="clearAll()">Yes</button>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div></div></div></div>
+                </div>
+           
+        <div id="render" class="render-wrap">
+        </div>
+  
+
+</body>
+</html>
+
+
+

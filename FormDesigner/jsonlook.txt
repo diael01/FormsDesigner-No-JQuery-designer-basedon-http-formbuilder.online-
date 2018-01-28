@@ -1,0 +1,17 @@
+[
+	{
+		"type": "autocomplete",
+		"label": "Autocomplete",
+		"className": "autocomplete",
+		"name": "autocomplete-1490022984760"
+	},
+        {
+		"type": "button",
+		"label": "Button",
+		"subtype": "button",
+		"className": "button-input btn-default btn",
+		"name": "button-1490023004386",
+		"style": "default"
+	},
+
+]
